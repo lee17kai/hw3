@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
   // writes random ride to the JavaScript console
   console.log(ride)
+  console.log(`hey`)
 
   // 🔥 YOUR CODE GOES HERE 🔥
   // Write the recipe (algorithm) in the comments. Then, write the code.
@@ -17,7 +18,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   let passengerFirstName = ride.passengerDetails.first
   let passengerLastName = ride.passengerDetails.last
 
-  console.log (`The number of products is`)
+
 
   // Display in human readable format
   console.log(`Incoming Noober Ride Request!`)
