@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   let passengerFirstName = ride.passengerDetails.first
   let passengerLastName = ride.passengerDetails.last
 
-
+  console.log (`The number of products is`)
 
   // Display in human readable format
   console.log(`Incoming Noober Ride Request!`)
