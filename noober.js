@@ -16,10 +16,24 @@ document.addEventListener('DOMContentLoaded', async function() {
   // Store variables: name, phone number, pickup location, dropoff, & # passengers
   let passengerFirstName = ride.passengerDetails.first
   let passengerLastName = ride.passengerDetails.last
+  let passengerPhoneNumber = ride.passengerDetails.phoneNumber
+  let pickupAddress = ride.pickupLocation.address
+  let pickupCity = ride.pickupLocation.city
+  let pickupState = ride.pickupLocation.state
+  let pickupZip = ride.pickupLocation.zip
+  let dropoffAddress = ride.dropoffLocation.address
+  let dropoffCity = ride.dropoffLocation.city
+  let dropoffState = ride.dropoffLocation.state
+  let dropoffZip = ride.dropoffLocation.zip
+  let numPassengers = ride.numberOfPassengers
 
   // Display in human readable format
-  console.log(`Incoming Noober Ride Request! \nCustomer Name: ${passengerFirstName} 
-  ${passengerLastName}`)
+  console.log(`Incoming Noober Ride Request! \n
+  Customer Name: ${passengerFirstName} ${passengerLastName}\n
+  Phone number: ${passengerPhoneNumber}\n
+  Pickup at ${pickupAddress}, ${pickupCity}, ${pickupState} ${pickupZip}\n
+  Drop-off at ${dropoffAddress}, ${dropoffCity}, ${dropoffState} ${dropoffZip}`)
+
 
   // 🔥 YOUR CODE ENDS HERE 🔥
 })
