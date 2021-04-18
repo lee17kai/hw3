@@ -17,8 +17,9 @@ document.addEventListener('DOMContentLoaded', async function() {
   let passengerFirstName = ride.passengerDetails.first
   let passengerLastName = ride.passengerDetails.last
 
+
   // Display in human readable format
-  console.log(`Incoming Noober Ride Request! Customer name: `, `\n`, `${passengerFirstName}`)
+  console.log(`Incoming Noober Ride Request! Customer name: `)
 
   // 🔥 YOUR CODE ENDS HERE 🔥
 })
