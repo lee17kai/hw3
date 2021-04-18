@@ -27,7 +27,11 @@ document.addEventListener('DOMContentLoaded', async function() {
   let dropoffZip = ride.dropoffLocation.zip
   let numPassengers = ride.numberOfPassengers
 
-  // Create and store variable for the type of car requested. Logic is, if they request purple, they get it. if they don't request purple and have <= 3 passengers, get X. if they don't request purple and have 4 or more passengers, get XL
+  // Create and store variable for the type of car requested. 
+  // Logic is, if they request purple, they get it. 
+  // otherwise, if they don't request purple and have 4 or more passengers, get XL. 
+  // and if they don't request purple and have 3 or fewer passengers, get X
+
   let carType = ``
   if(ride.purpleRequested == true) {
     carType = `Noober Purple`
@@ -38,7 +42,8 @@ document.addEventListener('DOMContentLoaded', async function() {
   else {
     carType = `Noober X`
   }
-  // Display in human readable format
+
+  // Display message in human readable format
   console.log(`Incoming Noober Ride Request! \n
   Customer Name: ${passengerFirstName} ${passengerLastName}\n
   Phone number: ${passengerPhoneNumber}\n
