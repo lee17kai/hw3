@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', async function() {
 
   // writes random ride to the JavaScript console
   console.log(ride)
+  console.log(`hello`)
 
   // 🔥 YOUR CODE GOES HERE 🔥
   // Write the recipe (algorithm) in the comments. Then, write the code.
