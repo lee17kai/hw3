@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', async function() {
   let ride = json[Math.floor(Math.random() * json.length)]
 
   // writes random ride to the JavaScript console
-  console.log(ride)
+  console.log(`hello ${ride}`)
   console.log(`hi world`)
 
   // 🔥 YOUR CODE GOES HERE 🔥
